@@ -35,15 +35,15 @@ int main()
 		if(command == 's')
 		{
 	    	res1=arr[arr_index] | (1 << index);
-            std::cout << res1 << std::endl;
+                std::cout << res1 << std::endl;
 	        arr[arr_index] = res1;
 		}
 
    		else if (command == 'r')
 		{
-		    res2=arr[arr_index] & ~  (1 << index);
-            std::cout << res2 << std::endl;
-		    arr[arr_index] = res2;
+		res2=arr[arr_index] & ~  (1 << index);
+                std::cout << res2 << std::endl;
+		arr[arr_index] = res2;
 		}	
 		else 
 		{	
@@ -58,8 +58,8 @@ int main()
 
 
 	}
-	    delete [] arr;
-	    std::cout << "Goodbye!" << std::endl;
+	        delete [] arr;
+	        std::cout << "Goodbye!" << std::endl;
 
 
 
